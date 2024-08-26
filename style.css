@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    height: 80vh;
+    background-image: url(2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    text-align: center;
+    border-radius: 2px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px  2px 6px rgb(0,0,0,0);
+
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option {
+   
+    /* margin: 10px 0; */
+    padding: 10px 20px; /* You can adjust the padding to make buttons wider */
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #6bbbfc;
+    cursor: pointer;
+    width: 100%; /* Make the button take the full width of the container */
+    max-width: 300px; /* Set a max width to prevent it from being too wide */
+    text-align: center;
+}
+
+.option.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.option.wrong {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #277fde;
+    color:black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #fc8834;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+#review-list {
+    margin-top: 20px;
+}
+
+#review-list li {
+    text-align: center;
+    margin-bottom: 15px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+/* Styles for the balloon animation */
+.balloons::before,
+.balloons::after {
+    content: '🎈';
+    position: absolute;
+    font-size: 2em;
+    animation: float 5s ease-in-out infinite;
+}
+
+.balloons::before {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.balloons::after {
+    right: 10%;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.result-button {
+    margin: 10px; /* Adjust the margin as needed */
+}
