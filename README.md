@@ -10,4 +10,4 @@ A simple quiz application built using HTML, CSS, and JavaScript. This app allows
 
 ## Demo
 
-You can see a live demo of the quiz app [here](
+You can see a live demo of the quiz app (https://vaishnavig77.github.io/Quiz-App/)
